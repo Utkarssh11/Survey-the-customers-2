@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #57b4c2;
+  color: #000000;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.container {
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 auto;
+  max-width: 500px;
+  background-color: #fff;
+}
+
+#welcomeScreen,
+#surveyScreen,
+#thankYouScreen {
+  text-align: center;
+  margin-top: 100px;
+  animation: fadeIn 1s ease-in;
+}
+
+button {
+  margin-top: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#previousBtn,
+#skipBtn {
+  margin-right: 10px;
+}
+
+.rating-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating-options label {
+  margin: 0 5px;
+  color: #4caf50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.rating-options input[type="radio"] {
+  display: none;
+}
+
+.rating-options label::before {
+  content: attr(data-rating);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #e9cd60;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #090a09;
+}
+
+.rating-options label:hover::before,
+.rating-options input[type="radio"]:checked + label::before {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Survey</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Customer Survey</h1>
+
+  <div class="container" id="welcomeScreen">
+    <h2>Welcome to our shop!</h2>
+    <p>Press the start button to begin the survey.</p>
+    <button id="startBtn">Start</button>
+  </div>
+
+  <div class="container" id="surveyScreen">
+    <h2>Question <span id="questionNumber">1</span>/5</h2>
+    <p id="questionText">How satisfied are you with our products?</p>
+    <div class="rating-options">
+      <input type="radio" name="rating" id="rating1" value="1">
+      <label for="rating1" data-rating="1"></label>
+
+      <input type="radio" name="rating" id="rating2" value="2">
+      <label for="rating2" data-rating="2"></label>
+
+      <input type="radio" name="rating" id="rating3" value="3">
+      <label for="rating3" data-rating="3"></label>
+
+      <input type="radio" name="rating" id="rating4" value="4">
+      <label for="rating4" data-rating="4"></label>
+
+      <input type="radio" name="rating" id="rating5" value="5">
+      <label for="rating5" data-rating="5"></label>
+    </div>
+    <button id="previousBtn" disabled>Previous</button>
+    <button id="skipBtn">Skip</button>
+    <button id="nextBtn">Next</button>
+  </div>
+
+  <div class="container" id="thankYouScreen">
+    <h2>Thank you for your time!</h2>
+    <p>We appreciate your feedback.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
